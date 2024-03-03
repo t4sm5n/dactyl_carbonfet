@@ -8,9 +8,9 @@
 
         layer_0 {
             bindings = <
-&trans  &kp FI_Q  &kp W   &kp E   &kp R  &kp T                                                  &kp Y  &kp U  &kp I      &kp O    &kp P            &kp FI_A_RING
-&trans  &kp A     &kp S   &kp D   &kp F  &kp G                                                  &kp H  &kp J  &kp K      &kp L    &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
-&trans  &kp Z     &kp X   &kp C   &kp V  &kp B                                                  &kp N  &kp M  &kp COMMA  &kp DOT  &kp MINUS        &trans
+&trans  &kp FI_Q  &kp FI_W   &kp FI_E   &kp FI_R  &kp FI_T                                                  &kp FI_Y  &kp FI_U  &kp FI_I      &kp FI_O    &kp FI_P            &kp FI_A_RING
+&trans  &kp FI_A     &kp FI_S   &kp FI_D   &kp FI_F  &kp FI_G                                                  &kp FI_H  &kp FI_J  &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
+&trans  &kp FI_Z     &kp FI_X   &kp FI_C   &kp FI_V  &kp FI_B                                                  &kp FI_N  &kp FI_M  &kp COMMA  &kp DOT  &kp MINUS        &trans
                   &trans  &trans                                                                              &trans     &trans
                                                 &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans  &trans  &trans  &trans  &trans  &trans
