@@ -1,0 +1,17 @@
+if SHIELD_DACTYL_CARBONFET_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Dactyl Carbonfet"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_DACTYL_CARBONFET_LEFT || SHIELD_DACTYL_CARBONFET_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
+
