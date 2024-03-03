@@ -8,23 +8,23 @@
 
         layer_0 {
             bindings = <
-&trans  &kp FI_Q  &kp FI_W   &kp FI_E   &kp FI_R  &kp FI_T                                                  &kp FI_Y  &kp FI_U  &kp FI_I      &kp FI_O    &kp FI_P            &kp FI_A_RING
-&trans  &kp FI_A     &kp FI_S   &kp FI_D   &kp FI_F  &kp FI_G                                                  &kp FI_H  &kp FI_J  &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
-&trans  &kp FI_Z     &kp FI_X   &kp FI_C   &kp FI_V  &kp FI_B                                                  &kp FI_N  &kp FI_M  &kp COMMA  &kp DOT  &kp MINUS        &trans
-                  &trans  &trans                                                                              &trans     &trans
-                                                &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FI_Q  &kp FI_W  &kp FI_E  &kp FI_R  &kp FI_T                                                  &kp FI_Y  &kp FI_U  &kp FI_I      &kp FI_O    &kp FI_P         &kp FI_A_RING
+&trans  &kp FI_A  &kp FI_S  &kp FI_D  &kp FI_F  &kp FI_G                                                  &kp FI_H  &kp FI_J  &kp FI_K      &kp FI_L    &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
+&trans  &kp FI_Z  &kp FI_X  &kp FI_C  &kp FI_V  &kp FI_B                                                  &kp FI_N  &kp FI_M  &kp FI_COMMA  &kp FI_DOT  &kp FI_MINUS     &trans
+                  &trans    &trans                                                                                            &trans        &trans
+                                                          &trans  &trans  &trans  &trans  &trans  &trans
+                                                          &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &kp FI_LT  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans     &trans                                                                                  &trans  &trans
-                                                   &trans  &trans  &trans  &trans  &trans  &trans
-                                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &kp FI_LT     &kp FI_GT    &trans        &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp FI_EXCL  &kp FI_MINUS  &kp FI_PLUS  &kp FI_EQUAL  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans        &trans       &trans        &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+                     &trans        &trans                                                                                             &trans  &trans
+                                                                      &trans  &trans  &trans  &trans  &trans  &trans
+                                                                      &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
