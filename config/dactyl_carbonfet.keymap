@@ -8,14 +8,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp FI_DOT &kp FI_DOT &kp FI_SLASH>;
-            label = "::";
+            label = "../";
         };
 
         colon_colon: colon_colon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp FI_COLON &kp FI_COLON>;
-            label = "COLON_COLON";
+            label = "::";
         };
     };
 
@@ -35,10 +35,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp FI_SQT    &kp FI_LT     &kp FI_GT     &kp FI_DQT    &kp FI_DOT                                                      &kp FI_AMPS  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FI_EXCL   &kp FI_MINUS  &kp FI_PLUS   &kp FI_EQUAL  &kp FI_POUND                                                    &kp FI_PIPE  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FI_CARET  &kp FI_SLASH  &kp FI_ASTRK  &kp FI_BSLH   &dot_dot_slash                                                  &trans       &trans  &trans  &trans  &trans  &trans
-                      &trans        &trans                                                                                                           &trans  &trans
+&trans  &kp FI_SQT    &kp FI_LT     &kp FI_GT     &kp FI_DQT    &kp FI_DOT                                                      &kp FI_AMPS  &colon_colon  &trans  &trans  &trans  &trans
+&trans  &kp FI_EXCL   &kp FI_MINUS  &kp FI_PLUS   &kp FI_EQUAL  &kp FI_POUND                                                    &kp FI_PIPE  &trans        &trans  &trans  &trans  &trans
+&trans  &kp FI_CARET  &kp FI_SLASH  &kp FI_ASTRK  &kp FI_BSLH   &dot_dot_slash                                                  &trans       &trans        &trans  &trans  &trans  &trans
+                      &trans        &trans                                                                                                                 &trans  &trans
                                                                                 &trans  &trans  &trans  &trans  &trans  &trans
                                                                                 &trans  &trans  &trans  &trans  &trans  &trans
             >;
