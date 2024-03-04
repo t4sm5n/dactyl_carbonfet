@@ -35,9 +35,9 @@
 
         layer_1 {
             bindings = <
-&trans  &kp FI_SQT    &kp FI_LT     &kp FI_GT     &kp FI_DQT    &kp FI_DOT                                                      &kp FI_AMPS   &colon_colon   &trans  &trans  &trans  &trans
-&trans  &kp FI_EXCL   &kp FI_MINUS  &kp FI_PLUS   &kp FI_EQUAL  &kp FI_POUND                                                    &kp FI_PIPE   &kp FI_COLON   &trans  &trans  &trans  &trans
-&trans  &kp FI_CARET  &kp FI_SLASH  &kp FI_ASTRK  &kp FI_BSLH   &dot_dot_slash                                                  &kp FI_TILDE  &kp FI_DOLLAR  &trans  &trans  &trans  &trans
+&trans  &kp FI_SQT    &kp FI_LT     &kp FI_GT     &kp FI_DQT    &kp FI_DOT                                                      &kp FI_AMPS   &colon_colon   &kp FI_A  &kp FI_A  &kp FI_A  &kp FI_A
+&trans  &kp FI_EXCL   &kp FI_MINUS  &kp FI_PLUS   &kp FI_EQUAL  &kp FI_POUND                                                    &kp FI_PIPE   &kp FI_COLON   &kp FI_A  &kp FI_A  &kp FI_A  &trans
+&trans  &kp FI_CARET  &kp FI_SLASH  &kp FI_ASTRK  &kp FI_BSLH   &dot_dot_slash                                                  &kp FI_TILDE  &kp FI_DOLLAR  &kp FI_A  &kp FI_A  &kp FI_A  &trans
                       &trans        &trans                                                                                                                   &trans  &trans
                                                                                 &trans  &trans  &trans  &trans  &trans  &trans
                                                                                 &trans  &trans  &trans  &trans  &trans  &trans
