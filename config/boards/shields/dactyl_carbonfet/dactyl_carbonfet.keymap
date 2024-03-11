@@ -1,76 +1,15 @@
-#include "../keys_fi.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        dot_dot_slash: dot_dot_slash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp FI_DOT &kp FI_DOT &kp FI_SLASH>;
-            label = "../";
-        };
-
-        colon_colon: colon_colon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp FI_COLON &kp FI_COLON>;
-            label = "::";
-        };
-    };
-
-    behaviors {
-        smart_shift: smart_shift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SMART_SHIFT";
-            bindings = <&sk LSHIFT>, <&caps_word>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&trans  &kp FI_Q  &kp FI_W  &kp FI_E  &kp FI_R  &kp FI_T                                                        &kp FI_Y  &kp FI_U  &kp FI_I      &kp FI_O     &kp FI_P         &kp FI_A_RING
-&trans  &kp FI_A  &kp FI_S  &kp FI_D  &kp FI_F  &kp FI_G                                                        &kp FI_H  &kp FI_J  &kp FI_K      &kp FI_L     &kp FI_O_UMLAUT  &kp FI_A_UMLAUT
-&trans  &kp FI_Z  &kp FI_X  &kp FI_C  &kp FI_V  &kp FI_B                                                        &kp FI_N  &kp FI_M  &kp FI_COMMA  &kp FI_DOT   &kp FI_MINUS     &trans
-                  &trans    &trans                                                                                                  &kp FI_LBKT   &kp FI_RBKT
-                                                          &trans  &trans  &trans  &smart_shift  &trans  &trans
-                                                          &trans  &trans  &trans  &trans        &trans  &trans
-            >;
-        };
-
-        layer_1 {
-            bindings = <
-&trans  &kp FI_SQT    &kp FI_LT     &kp FI_GT    &kp FI_DQT    &kp FI_DOT                                                      &kp FI_AMPS   &colon_colon  &kp FI_LBKT  &kp FI_RBKT  &kp FI_PRCNT  &trans
-&trans  &kp FI_EXCL   &kp FI_MINUS  &kp FI_PLUS  &kp FI_EQUAL  &kp FI_HASH                                                     &kp FI_PIPE   &kp FI_COLON  &kp FI_LPAR  &kp FI_RPAR  &kp FI_QMARK  &trans
-&trans  &kp FI_CARET  &kp FI_FSLH   &kp FI_STAR  &kp FI_BSLH   &dot_dot_slash                                                  &kp FI_TILDE  &kp FI_DLLR   &kp FI_LBRC  &kp FI_RBRC  &kp FI_AT     &trans
-                      &trans        &trans                                                                                                                 &trans       &trans
-                                                                               &trans  &trans  &trans  &trans  &trans  &trans
-                                                                               &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans    &kp LC(FI_Z)  &kp LC(LS(FI_Z))  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp LEFT  &kp UP        &kp DOWN          &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans    &trans        &trans            &trans     &trans
-                &trans  &trans                                                                                    &trans        &trans
-                                                &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W   &kp E   &kp R   &kp T                                                   &kp Y   &kp U   &kp I   &kp O   &kp P   &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &kp G                                                   &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                                                   &kp N   &kp M   &trans  &trans  &trans  &trans
                 &trans  &trans                                                                                  &trans  &trans
                                                 &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans  &trans  &trans  &trans  &trans  &trans
