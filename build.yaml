@@ -22,3 +22,5 @@ include:
     shield: dactyl_carbonfet_left
   - board: nice_nano_v2
     shield: dactyl_carbonfet_right
+  - board: nice_nano_v2
+    shield: settings_reset
