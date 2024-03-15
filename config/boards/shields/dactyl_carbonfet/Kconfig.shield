@@ -1,6 +1,6 @@
 config SHIELD_DACTYL_CARBONFET_LEFT
-	def_bool $(shields_list_contains, dactyl_carbonfet_left)
+	def_bool $(shields_list_contains,dactyl_carbonfet_left)
 
 config SHIELD_DACTYL_CARBONFET_RIGHT
-	def_bool $(shields_list_contains, dactyl_carbonfet_right)
+	def_bool $(shields_list_contains,dactyl_carbonfet_right)
 
