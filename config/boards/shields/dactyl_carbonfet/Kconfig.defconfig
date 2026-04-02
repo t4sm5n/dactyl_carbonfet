@@ -1,7 +1,7 @@
 if SHIELD_DACTYL_CARBONFET_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Dactyl Carbonfet"
+	default "DacCarb"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
